@@ -1,0 +1,34 @@
+body{
+    background: #eeedec;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+}
+
+#sec2{
+    max-width: 550px;
+}
+
+.current{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#sec3{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+#sec3 div div.datum{
+ font-size: 1.1em;
+}
+
+input{
+    max-width: 530px;
+}
+
+.current{
+    border: 3px solid #fdc12a;
+    border-radius: 3px;
+}

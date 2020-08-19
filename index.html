@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>World Weather V2 5days Forecast</title>
+</head>
+
+<body>
+    <!-- own id sec1 sec2 sec3-->
+    <div class="container my-5 mx-auto" id="sec1">
+        <h1 class="text-muted text-center my-4">World Weather</h1>
+
+        <!-- own class is (change-location) -->
+        <form class="my-4 text-center text-muted">
+            <label for="city">Enter Your Location</label>
+            <input type="text" name="city" class="form-control p-4 mx-auto">
+        </form>
+    </div>
+
+    <div class="container mx-auto" id="sec2">
+        <!-- own classes are current, (time), icon, details -->
+        <div class="current d-none card shadow-lg">
+            <img src="https://via.placeholder.com/400x300" class="card-img-top">
+            
+            <div class="text-muted text-uppercase text-center details">
+                <h5 class="my-3">City</h5>
+                <div class="my-3">date</div>
+                <div class="icon bg-light mx-auto text-center">
+                    <img src="img/icons/1.svg">
+                    <span>Temp</span>
+                    <span>&deg;C</span>
+                    <div>Weather text</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 mx-auto" id="sec3">
+    </div>
+
+    <script src="JS/forecast.js"></script>
+    <script src="JS/app.js"></script>
+</body>
+</html>
